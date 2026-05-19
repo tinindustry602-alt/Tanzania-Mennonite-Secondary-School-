@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Gallery</title>
+</head>
+
+<body style="margin:0; padding:10px; background:#f5f5f5; text-align:center; font-family:Arial; overflow-x:hidden;">
+
+    <h1 style="color:darkblue;">
+        DOM PHOTO GALLERY
+    </h1>
+
+    <!-- NORMAL IMAGES -->
+
+    <img src="dom1.jpg"
+    style="width:200px; height:250px; object-fit:cover; margin-bottom:5px; border-radius:8px;">
+
+    <br>
+
+    <img src="dom2.jpg"
+    style="width:200px; height:250px; object-fit:cover; margin-bottom:5px; border-radius:8px;">
+
+    <br>
+
+    <img src="dom3.jpg"
+    style="width:200px; height:250px; object-fit:cover; margin-bottom:5px; border-radius:8px;">
+
+    <br>
+
+    <img src="dom4.jpg"
+    style="width:200px; height:250px; object-fit:cover; margin-bottom:5px; border-radius:8px;">
+
+    <br>
+
+    <img src="dom5.jpg"
+    style="width:200px; height:250px; object-fit:cover; margin-bottom:5px; border-radius:8px;">
+
+    <br>
+
+    <img src="dom6.jpg"
+    style="width:200px; height:250px; object-fit:cover; margin-bottom:5px; border-radius:8px;">
+
+    <br>
+
+    <img src="dom7.jpg"
+    style="width:200px; height:250px; object-fit:cover; margin-bottom:5px; border-radius:8px;">
+
+    <br>
+
+    <!-- ANIMATION IMAGES -->
+
+    <div style="width:100%; overflow:hidden; margin-top:10px;">
+
+        <img id="slider"
+        src="dom8.jpg"
+        style="
+        width:200px;
+        height:250px;
+        object-fit:cover;
+        border-radius:8px;
+        position:relative;
+        animation:slide 5s infinite;
+        ">
+
+    </div>
+
+    <style>
+
+        @keyframes slide {
+
+            0%{
+                left:-300px;
+                opacity:0;
+            }
+
+            20%{
+                left:0px;
+                opacity:1;
+            }
+
+            80%{
+                left:0px;
+                opacity:1;
+            }
+
+            100%{
+                left:300px;
+                opacity:0;
+            }
+        }
+
+    </style>
+
+    <script>
+
+        let images = [
+            "dom8.jpg",
+            "dom9.jpg",
+            "dom10.jpg"
+        ];
+
+        let index = 0;
+
+        setInterval(function(){
+
+            index++;
+
+            if(index >= images.length){
+                index = 0;
+            }
+
+            document.getElementById("slider").src = images[index];
+
+        }, 5000);
+
+    </script>
+
+</body>
+</html>
