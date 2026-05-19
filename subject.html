@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subjects</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial;
+    background:black;
+    color:lightblue;
+    overflow:hidden;
+    text-align:center;
+}
+
+.container{
+    padding:40px 20px;
+}
+
+h1{
+    color:lightblue;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+.subjects{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    font-size:1.5em;
+    animation:scrollDown 18s linear infinite;
+}
+
+.subjects div{
+    background:#111;
+    padding:12px;
+    border-radius:12px;
+    width:80%;
+    margin:auto;
+    border-left:6px solid lightblue;
+    color:lightblue;
+}
+
+.message{
+    margin-top:50px;
+    font-size:24px;
+    font-weight:bold;
+    color:white;
+}
+
+@keyframes scrollDown{
+    0%{
+        transform:translateY(-100%);
+    }
+
+    100%{
+        transform:translateY(100%);
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Our School offers the following subjects</h1>
+
+<div class="subjects">
+
+<div>English Language</div>
+<div>Geography</div>
+<div>Kiswahili</div>
+<div>Bible Knowledge</div>
+<div>Historia na maadili ya Tanzania</div>
+<div>History</div>
+<div>Book Keeping</div>
+<div>Business Studies</div>
+<div>Biology</div>
+<div>Chemistry</div>
+<div>Physics</div>
+<div>Mathematics</div>
+<div>Computer Science</div>
+
+</div>
+
+<div class="message">
+Welcome to our school for better performance and success.
+</div>
+
+</div>
+
+</body>
+</html>
