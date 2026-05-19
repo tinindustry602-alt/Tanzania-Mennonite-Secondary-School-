@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tanzania Mennonite Secondary School Gallery</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+header{
+    background:#14532d;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.slider{
+    width:150px;
+    height:250px;
+    margin:40px auto;
+    overflow:hidden;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+    position:relative;
+}
+
+.slides{
+    width:750px;
+    height:250px;
+    display:flex;
+    animation:slide 25s infinite;
+}
+
+.slides img{
+    width:150px;
+    height:250px;
+    object-fit:cover;
+}
+
+@keyframes slide{
+
+    0%{
+        transform:translateX(0);
+    }
+
+    20%{
+        transform:translateX(0);
+    }
+
+    25%{
+        transform:translateX(-150px);
+    }
+
+    40%{
+        transform:translateX(-150px);
+    }
+
+    45%{
+        transform:translateX(-300px);
+    }
+
+    60%{
+        transform:translateX(-300px);
+    }
+
+    65%{
+        transform:translateX(-450px);
+    }
+
+    80%{
+        transform:translateX(-450px);
+    }
+
+    85%{
+        transform:translateX(-600px);
+    }
+
+    100%{
+        transform:translateX(-600px);
+    }
+
+}
+
+footer{
+    background:#14532d;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Tanzania Mennonite Secondary School</h1>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contacts.html">Contact</a>
+</nav>
+
+</header>
+
+<div class="slider">
+
+    <div class="slides">
+
+        <img src="man1.jpg" alt="Image 1">
+
+        <img src="man2.jpg" alt="Image 2">
+
+        <img src="man3.jpg" alt="Image 3">
+
+        <img src="man4.jpg" alt="Image 4">
+
+        <img src="man5.jpg" alt="Image 5">
+
+    </div>
+
+</div>
+
+<footer>
+
+<p>&copy; 2026 Tanzania Mennonite Secondary School</p>
+
+</footer>
+
+</body>
+</html>
