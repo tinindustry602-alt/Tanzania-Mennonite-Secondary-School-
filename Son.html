@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanzania Mennonite Secondary School</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial;
+    background:black;
+    color:white;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+.container{
+    padding:20px;
+}
+
+h1{
+    font-size:38px;
+    margin-top:20px;
+    color:lightblue;
+    animation:zoom 3s infinite;
+}
+
+h2{
+    font-size:26px;
+    color:white;
+    margin-top:10px;
+}
+
+@keyframes zoom{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.05);}
+    100%{transform:scale(1);}
+}
+
+video{
+    width:90%;
+    max-width:700px;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+.image-box{
+    margin-top:25px;
+    animation:slide 5s infinite;
+}
+
+.image-box img{
+    width:260px;
+    height:320px;
+    object-fit:cover;
+    border-radius:15px;
+    border:4px solid white;
+}
+
+@keyframes slide{
+    0%{
+        transform:translateX(-250px);
+        opacity:0;
+    }
+
+    50%{
+        transform:translateX(0px);
+        opacity:1;
+    }
+
+    100%{
+        transform:translateX(250px);
+        opacity:0;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>TANZANIA MENNONITE SECONDARY SCHOOL</h1>
+
+<h2>OUR SCHOOL SONG</h2>
+
+<video autoplay muted loop controls>
+    <source src="https://cdn.pixabay.com/video/2021/08/26/86364-593745488_large.mp4" type="video/mp4">
+</video>
+
+<div class="image-box">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Julius_Nyerere.jpg" alt="School Image">
+
+</div>
+
+<br><br>
+
+<audio autoplay loop controls>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+</body>
+</html>
