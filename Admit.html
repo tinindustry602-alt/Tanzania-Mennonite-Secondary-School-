@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TMSS Admission Page</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#d8f3dc;
+    padding:30px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    color:brown;
+    margin-bottom:30px;
+}
+
+h2{
+    color:darkgreen;
+    margin:25px 0 15px;
+    border-bottom:2px solid lightgreen;
+    padding-bottom:5px;
+}
+
+p{
+    margin:10px 0;
+    line-height:1.7;
+    color:#444;
+}
+
+ul{
+    margin-left:25px;
+    line-height:2;
+}
+
+.admission-form{
+    margin-top:30px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button{
+    background:green;
+    color:white;
+    border:none;
+    padding:14px 25px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:darkgreen;
+}
+
+.contact-box{
+    background:#f1fff1;
+    padding:20px;
+    border-left:5px solid green;
+    margin-top:30px;
+    border-radius:10px;
+}
+
+.contact-box a{
+    color:blue;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.contact-box a:hover{
+    color:darkred;
+}
+
+footer{
+    margin-top:40px;
+    background:#5c4033;
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-radius:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>ADMISSION APPLICATION</h1>
+
+    <p>
+        Welcome to Tanzania Mennonite Secondary School (TMSS).
+        We warmly invite students to apply for admission
+        to join our academic community.
+    </p>
+
+    <h2>Admission Requirements</h2>
+
+    <ul>
+        <li>Birth Certificate Copy</li>
+        <li>Academic Result Slip</li>
+        <li>Passport Size Photos</li>
+        <li>Transfer Letter (if applicable)</li>
+        <li>Completed Admission Form</li>
+    </ul>
+
+    <h2>Available Programs</h2>
+
+    <ul>
+        <li>Ordinary Level (O-Level)</li>
+        <li>Advanced Level (A-Level)</li>
+        <li>Science Combinations</li>
+        <li>Arts Combinations</li>
+        <li>Business Studies</li>
+    </ul>
+
+    <h2>Admission Form</h2>
+
+    <form class="admission-form">
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter full name">
+
+        <label>Gender</label>
+        <select>
+            <option>Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <label>Date of Birth</label>
+        <input type="date">
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter email">
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number">
+
+        <label>Program Applying For</label>
+        <select>
+            <option>Select Program</option>
+            <option>O-Level</option>
+            <option>A-Level</option>
+        </select>
+
+        <label>Additional Information</label>
+        <textarea rows="5" placeholder="Write here..."></textarea>
+
+        <button type="submit">
+            Submit Application
+        </button>
+
+    </form>
+
+    <div class="contact-box">
+
+        <h2>Need Help?</h2>
+
+        <p>
+            <strong>Telephone 1:</strong>
+            <a href="https://wa.me/255712505174" target="_blank">
+                +255 712 505 174
+            </a>
+        </p>
+
+        <p>
+            <strong>Telephone 2:</strong>
+            <a href="https://wa.me/255683237589" target="_blank">
+                +255 683 237 589
+            </a>
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:kmt.upanga@gmail.com">
+                kmt.upanga@gmail.com
+            </a>
+        </p>
+
+    </div>
+
+    <footer>
+        © 2026 Tanzania Mennonite Secondary School | All Rights Reserved
+    </footer>
+
+</div>
+
+</body>
+</html>
